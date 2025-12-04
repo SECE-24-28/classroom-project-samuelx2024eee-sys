@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tailwind Home with Image</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gray-50 text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="mx-auto max-w-7xl px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-indigo-600">Brand</h1>
+      <nav class="space-x-4">
+        <a href="#" class="text-gray-700 hover:text-indigo-600">Home</a>
+        <a href="#features" class="text-gray-700 hover:text-indigo-600">Features</a>
+        <a href="#contact" class="text-gray-700 hover:text-indigo-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gray-100">
+    <div class="mx-auto max-w-7xl px-4 py-16 grid md:grid-cols-2 gap-8 items-center">
+      <!-- Text -->
+      <div>
+        <h2 class="text-4xl font-extrabold text-gray-900">Welcome to Our Homepage</h2>
+        <p class="mt-4 text-lg text-gray-700">
+          Build modern websites faster with TailwindCSS. This is a simple responsive homepage with one picture.
+        </p>
+        <div class="mt-6 flex gap-3">
+          <a href="#" class="px-5 py-3 bg-indigo-600 text-white rounded-md hover:bg-indigo-500">Get Started</a>
+          <a href="#" class="px-5 py-3 border border-gray-300 rounded-md hover:bg-gray-100">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Picture -->
+      <div class="flex justify-center">
+        <img src="https://via.placeholder.com/500x300.png?text=Homepage+Image"
+             alt="Homepage illustration"
+             class="rounded-lg shadow-md" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-16 bg-white">
+    <div class="mx-auto max-w-7xl px-4 text-center">
+      <h3 class="text-2xl font-bold">Features</h3>
+      <p class="mt-2 text-gray-600">Responsive design, utility-first classes, and easy customization.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-gray-50">
+    <div class="mx-auto max-w-7xl px-4">
+      <h3 class="text-2xl font-bold mb-4">Contact Us</h3>
+      <form class="space-y-4 max-w-md">
+        <input type="text" placeholder="Name" class="w-full rounded border-gray-300 focus:ring-indigo-500 focus:border-indigo-500" />
+        <input type="email" placeholder="Email" class="w-full rounded border-gray-300 focus:ring-indigo-500 focus:border-indigo-500" />
+        <textarea rows="4" placeholder="Message" class="w-full rounded border-gray-300 focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+        <button type="submit" class="w-full bg-indigo-600 text-white py-2 rounded hover:bg-indigo-500">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t py-6 text-center text-gray-600">
+    © 2025 Brand. All rights reserved.
+  </footer>
+
+</body>
+</html>
